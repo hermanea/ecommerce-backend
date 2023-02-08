@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   }).then(data =>{
     res.json(data);
   }).catch(err =>{
-    console.log(error);
+    console.log(err);
     res.status(500).json({
       msg: "An error occured.",
       err: err
